@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            display: flex;
+            flex-wrap: wrap;
+            background-color: antiquewhite;
+        }
+        .images{
+            height: 200px;
+            padding: 25px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello</h1>
+    <div>
+        {%for i in table_data%}
+            <img src="{{i}}" alt="images" class="images">
+        {%endfor%}
+    </div>
+</body>
+</html>
